@@ -39,9 +39,9 @@ export default function Home({ navigate }: HomeProps) {
           <div className="hero-copy">
             <Type className="eyebrow">{config.role} / {config.name}</Type>
             <Type as="h1" className="display">
-              I observe the world,
+              Somewhere between
               <br />
-              then <i>build</i> new ones.
+              an idea and a <i>thing</i>.
             </Type>
             <div className="hero-intro">
               <Type>{config.heroSubtitle}</Type>
