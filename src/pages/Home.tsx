@@ -27,9 +27,12 @@ export default function Home({ navigate }: HomeProps) {
         <section className="hero">
           <div className="hero-media">
             <div className="hero-gradient" aria-hidden="true">
-              <div className="gradient-orb orb-orange" />
-              <div className="gradient-orb orb-blue" />
-              <div className="gradient-orb orb-dusk" />
+              <div className="gradient-orb orb-amber" />
+              <div className="gradient-orb orb-cyan" />
+              <div className="gradient-orb orb-magenta" />
+              <div className="gradient-orb orb-violet" />
+              <div className="gradient-orb orb-emerald" />
+              <div className="gradient-orb orb-plasma" />
             </div>
             <div className="hero-shade" />
           </div>
