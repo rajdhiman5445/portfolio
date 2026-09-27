@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import type { Page, NavItem } from "@/types";
+import { getSiteConfig } from "@/utils/content";
 import Action from "./ui/Action";
-
-const mainPages: NavItem[] = [
-  { id: "work", label: "Work" },
-  { id: "library", label: "Library" },
-  { id: "fieldnotes", label: "Fieldnotes" },
-  { id: "about", label: "About" },
-];
+import Arrow from "./ui/Arrow";
 
 interface HeaderProps {
   page: Page;
@@ -16,15 +11,23 @@ interface HeaderProps {
 
 export default function Header({ page, navigate }: HeaderProps) {
   const [open, setOpen] = useState(false);
+  const config = getSiteConfig();
+
+  const navItems: NavItem[] = [
+    { id: "work", label: "Projects" },
+    { id: "photography", label: "Photography" },
+    { id: "writing", label: "Writing" },
+    { id: "about", label: "About" },
+  ];
 
   return (
     <header className="site-header">
       <Action className="signature" onClick={() => navigate("home")} ariaLabel="Go to home">
-        <span className="signature-mark">N</span>
-        <span>NAME / 2025</span>
+        <span className="signature-mark">{config.mark || "R"}</span>
+        <span>{config.name} / {config.year}</span>
       </Action>
       <nav className={open ? "main-nav is-open" : "main-nav"} aria-label="Main navigation">
-        {mainPages.map((item, index) => (
+        {navItems.map((item, index) => (
           <Action
             key={item.id}
             onClick={() => {
@@ -37,8 +40,24 @@ export default function Header({ page, navigate }: HeaderProps) {
             {item.label}
           </Action>
         ))}
+        {config.handbookUrl && (
+          <a
+            href={config.handbookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link"
+            onClick={() => setOpen(false)}
+          >
+            <span>0{navItems.length + 1}</span>
+            Handbook <Arrow />
+          </a>
+        )}
       </nav>
-      <Action className="menu-toggle" onClick={() => setOpen(!open)} ariaLabel="Toggle navigation">
+      <Action
+        className="menu-toggle"
+        onClick={() => setOpen(!open)}
+        ariaLabel="Toggle navigation"
+      >
         {open ? "Close" : "Menu"}
       </Action>
     </header>

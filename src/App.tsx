@@ -3,55 +3,78 @@ import type { Page } from "@/types";
 import Header from "@/components/Header";
 import Home from "@/pages/Home";
 import Work from "@/pages/Work";
-import Library from "@/pages/Library";
-import Fieldnotes from "@/pages/Fieldnotes";
+import Photography from "@/pages/Photography";
+import PhotoDetail from "@/pages/PhotoDetail";
+import Writing from "@/pages/Writing";
+import ArticleDetail from "@/pages/ArticleDetail";
+import ProjectDetail from "@/pages/ProjectDetail";
 import About from "@/pages/About";
-import CaseStudy from "@/pages/CaseStudy";
-import Handbook from "@/pages/Handbook";
-import Fiction from "@/pages/Fiction";
+
+interface RouteState {
+  page: Page;
+  param?: string;
+}
+
+function parseHash(): RouteState {
+  const raw = window.location.hash.replace(/^#\/?/, "");
+  const [route, ...rest] = raw.split("/");
+  const param = rest.join("/");
+  return {
+    page: (route || "home") as Page,
+    param: param || undefined,
+  };
+}
 
 export default function App() {
-  const initial = (window.location.hash.replace("#/", "") || "home") as Page;
-  const [page, setPage] = useState<Page>(initial);
+  const [routeState, setRouteState] = useState<RouteState>(parseHash);
 
-  const navigate = (next: Page) => {
-    setPage(next);
-    window.location.hash = `/${next}`;
+  const navigate = (next: Page, param?: string) => {
+    const hashPath = param ? `/${next}/${param}` : `/${next}`;
+    window.location.hash = hashPath;
+    setRouteState({ page: next, param });
     window.scrollTo(0, 0);
   };
 
   useEffect(() => {
-    const onHash = () =>
-      setPage((window.location.hash.replace("#/", "") || "home") as Page);
+    const onHash = () => {
+      setRouteState(parseHash());
+      window.scrollTo(0, 0);
+    };
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
   const content = useMemo(() => {
+    const { page, param } = routeState;
     switch (page) {
       case "work":
         return <Work navigate={navigate} />;
-      case "library":
-        return <Library navigate={navigate} />;
+      case "photography":
+        return <Photography navigate={navigate} />;
+      case "photo":
+        return <PhotoDetail photoId={param} navigate={navigate} />;
+      case "writing":
       case "fieldnotes":
-        return <Fieldnotes navigate={navigate} />;
+      case "library":
+        return <Writing navigate={navigate} />;
+      case "article":
+        return <ArticleDetail slug={param} navigate={navigate} />;
+      case "project":
+      case "case-study":
+        return <ProjectDetail slug={param || "lumen"} navigate={navigate} />;
+      case "fiction":
+        return <ArticleDetail slug="cartographer-silences" navigate={navigate} />;
       case "about":
         return <About navigate={navigate} />;
-      case "case-study":
-        return <CaseStudy navigate={navigate} />;
-      case "handbook":
-        return <Handbook navigate={navigate} />;
-      case "fiction":
-        return <Fiction navigate={navigate} />;
       case "home":
       default:
         return <Home navigate={navigate} />;
     }
-  }, [page]);
+  }, [routeState]);
 
   return (
     <div className="app">
-      <Header page={page} navigate={navigate} />
+      <Header page={routeState.page} navigate={navigate} />
       {content}
     </div>
   );

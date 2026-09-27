@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import type { Page } from "@/types";
-import { projects } from "@/data/projects";
+import { getProjects } from "@/utils/content";
 import Type from "@/components/ui/Type";
 import Action from "@/components/ui/Action";
 import Arrow from "@/components/ui/Arrow";
@@ -8,12 +8,16 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import Footer from "@/components/Footer";
 
 interface WorkProps {
-  navigate: (page: Page) => void;
+  navigate: (page: Page, param?: string) => void;
 }
 
 export default function Work({ navigate }: WorkProps) {
+  const projects = getProjects();
   const [filter, setFilter] = useState("All");
-  const visible = filter === "All" ? projects : projects.filter((p) => p.cat === filter);
+
+  const categories = ["All", ...Array.from(new Set(projects.map((p) => p.category)))];
+
+  const visible = filter === "All" ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <main className="page shell">
@@ -23,11 +27,12 @@ export default function Work({ navigate }: WorkProps) {
           Selected <i>work</i> across image, interface, and machine.
         </Type>
         <Type>
-          A selective index of finished projects and useful experiments. Each is a different way to ask a question.
+          A selective index of engineering systems, robotics prototypes, and UI case studies. Each is a different way to ask a question.
         </Type>
       </div>
+
       <div className="filter-bar" role="group" aria-label="Project filters">
-        {["All", "Photography", "Design", "Engineering", "AI/ML", "Robotics"].map((f) => (
+        {categories.map((f) => (
           <Action
             key={f}
             className={filter === f ? "active" : ""}
@@ -37,23 +42,24 @@ export default function Work({ navigate }: WorkProps) {
           </Action>
         ))}
       </div>
+
       <div className="work-index">
         {visible.map((project, i) => (
           <Action
-            key={project.title}
+            key={project.slug}
             className="project-row"
-            onClick={() => navigate("case-study")}
+            onClick={() => navigate("project", project.slug)}
           >
             <span className="project-no">0{i + 1}</span>
             <div className="project-thumb">
-              <img src={project.img} alt="" />
+              {project.thumbnail && <img src={project.thumbnail} alt="" loading="lazy" />}
             </div>
             <div>
               <Type as="h2">{project.title}</Type>
               <Type>{project.desc}</Type>
             </div>
             <div className="project-meta">
-              <span>{project.cat}</span>
+              <span>{project.category}</span>
               <span>{project.year}</span>
             </div>
             <Arrow />

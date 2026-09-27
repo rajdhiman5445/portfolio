@@ -1,0 +1,92 @@
+[
+  {
+    "id": "city-between-frames",
+    "title": "The City Between Frames",
+    "series": "Motion & Time",
+    "year": "2024",
+    "location": "Downtown Transit Corridor",
+    "camera": "Sony A7 IV · 35mm f/1.8",
+    "imageUrl": "https://images.unsplash.com/photo-1534312527009-56c7016453e6?auto=format&fit=crop&w=1600&q=86",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1534312527009-56c7016453e6?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "A study of evening light cutting through moving streetcars. Captured at twilight with intentional camera movement to explore how the eye reconstructs fleeting silhouettes."
+  },
+  {
+    "id": "chromatic-solitude",
+    "title": "Chromatic Solitude",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Industrial District",
+    "camera": "Sony A7 IV · 50mm f/1.4",
+    "imageUrl": "https://images.unsplash.com/photo-1580529352977-df08012d92b0?auto=format&fit=crop&w=1800&q=88",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1580529352977-df08012d92b0?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "Abstract color bands cast by sodium-vapor streetlights against rain-slicked asphalt. The compression of distance turns street furniture into pure geometry."
+  },
+  {
+    "id": "morning-frequencies",
+    "title": "Morning Frequencies",
+    "series": "Urban Geometry",
+    "year": "2024",
+    "location": "Financial Center",
+    "camera": "Sony A7 IV · 85mm f/1.8",
+    "imageUrl": "https://images.unsplash.com/photo-1723739012018-f401c2f0e758?auto=format&fit=crop&w=1600&q=86",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1723739012018-f401c2f0e758?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "Shadows folding across concrete facades during early morning commute. High contrast monochrome conversion emphasizing structural rhythm."
+  },
+  {
+    "id": "ambient-dusk",
+    "title": "Ambient Dusk",
+    "series": "Night Studies",
+    "year": "2023",
+    "location": "Harbor Terminal",
+    "camera": "Fujifilm X-T4 · 23mm f/2",
+    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=86",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "Long exposure capturing container cranes dissolving into mist over water. Looking at how industrial architecture transforms once human presence retreats."
+  },
+  {
+    "id": "transit-echoes",
+    "title": "Transit Echoes",
+    "series": "Motion & Time",
+    "year": "2023",
+    "location": "Underground Metro Station",
+    "camera": "Sony A7 IV · 24mm f/2.8",
+    "imageUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1600&q=86",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "Rushing platform lights during peak rush hour. The blur becomes a measure of human haste inside an engineered cavern."
+  },
+  {
+    "id": "quiet-periphery",
+    "title": "Quiet Periphery",
+    "series": "Urban Geometry",
+    "year": "2024",
+    "location": "Suburban Rail Yard",
+    "camera": "Sony A7 IV · 50mm f/1.4",
+    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=86",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com",
+      "highRes": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2400&q=95"
+    },
+    "notes": "Where infrastructure meets natural terrain. Exploring negative space and stillness at the edge of the transit network."
+  }
+]

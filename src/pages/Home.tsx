@@ -1,8 +1,7 @@
 import React from "react";
 import type { Page } from "@/types";
 import atmosphere from "@/imports/_.jpeg";
-import motionPoster from "@/imports/Dynamic_Typography_Poster_Inspired_by_Motion_and_Deadlines.jpeg";
-import { nightLight } from "@/data/projects";
+import { getSiteConfig, getProjects, getArticles, getPhotos } from "@/utils/content";
 import Type from "@/components/ui/Type";
 import Action from "@/components/ui/Action";
 import Arrow from "@/components/ui/Arrow";
@@ -10,10 +9,19 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import Footer from "@/components/Footer";
 
 interface HomeProps {
-  navigate: (page: Page) => void;
+  navigate: (page: Page, param?: string) => void;
 }
 
 export default function Home({ navigate }: HomeProps) {
+  const config = getSiteConfig();
+  const projects = getProjects();
+  const articles = getArticles();
+  const photos = getPhotos();
+
+  const featuredProject = projects.find((p) => p.featured) || projects[0];
+  const featuredPhoto = photos[0];
+  const recentArticles = articles.slice(0, 3);
+
   return (
     <>
       <main>
@@ -23,18 +31,16 @@ export default function Home({ navigate }: HomeProps) {
             <div className="hero-shade" />
           </div>
           <div className="hero-copy">
-            <Type className="eyebrow">Multidisciplinary creator / [PLACEHOLDER NAME]</Type>
+            <Type className="eyebrow">{config.role} / {config.name}</Type>
             <Type as="h1" className="display">
               I observe the world,
               <br />
               then <i>build</i> new ones.
             </Type>
             <div className="hero-intro">
-              <Type>
-                Working across images, stories, interfaces, intelligent systems, and machines.
-              </Type>
-              <span className="coordinate">
-                43.6532° N<br />79.3832° W
+              <Type>{config.heroSubtitle}</Type>
+              <span className="coordinate" style={{ whiteSpace: "pre-line" }}>
+                {config.coordinates}
               </span>
             </div>
           </div>
@@ -46,167 +52,168 @@ export default function Home({ navigate }: HomeProps) {
         <section className="statement shell">
           <SectionLabel index="00">Premise</SectionLabel>
           <Type as="h2" className="statement-title">
-            A practice shaped by <i>curiosity</i>—moving between the poetic and the precise.
+            {config.premiseTitle}
           </Type>
           <Type className="statement-copy">
-            I photograph what disappears, write what can’t be photographed, and engineer systems
-            that make speculation tangible.
+            {config.premiseCopy}
           </Type>
         </section>
 
-        <section className="featured shell">
-          <div className="section-head">
-            <SectionLabel index="01">Selected work</SectionLabel>
-            <Action onClick={() => navigate("work")} className="text-link">
-              View index <Arrow />
-            </Action>
-          </div>
-          <article className="feature-primary">
-            <Action className="media-button" onClick={() => navigate("case-study")}>
-              <img src={nightLight} alt="Abstract red, blue, and amber light trails" />
-              <span className="image-index">F / 01</span>
-            </Action>
-            <div className="feature-copy">
-              <Type className="meta">AI / INTERACTION DESIGN / 2025</Type>
-              <Type as="h3">Lumen: teaching a machine to notice</Type>
-              <Type>
-                An experimental visual system exploring how computer vision might describe images
-                without flattening their ambiguity.
-              </Type>
-              <Action
-                onClick={() => navigate("case-study")}
-                className="circle-link"
-                ariaLabel="Open Lumen case study"
-              >
-                <Arrow />
+        {featuredProject && (
+          <section className="featured shell">
+            <div className="section-head">
+              <SectionLabel index="01">Selected work</SectionLabel>
+              <Action onClick={() => navigate("work")} className="text-link">
+                View all projects <Arrow />
               </Action>
             </div>
-          </article>
-          <div className="feature-grid">
-            <article className="photo-feature">
-              <img src={motionPoster} alt="Motion-blurred figure crossing a city street" />
-              <div>
-                <Type className="meta">PHOTOGRAPHY / ONGOING</Type>
-                <Type as="h3">The City Between Frames</Type>
-                <Type className="muted">
-                  A study of movement, memory, and the unreliability of looking.
-                </Type>
-              </div>
-            </article>
-            <article className="text-feature">
-              <span className="large-number">02</span>
-              <Type className="meta">SHORT FICTION / 14 MIN READ</Type>
-              <Type as="h3">The Cartographer of Small Silences</Type>
-              <Type className="serif-excerpt">
-                “By morning, every map in the archive had grown a new coastline.”
-              </Type>
-              <Action onClick={() => navigate("fiction")} className="text-link">
-                Read the story <Arrow />
+            <article className="feature-primary">
+              <Action
+                className="media-button"
+                onClick={() => navigate("project", featuredProject.slug)}
+              >
+                <img src={featuredProject.bannerImage || featuredProject.thumbnail} alt={featuredProject.title} />
+                <span className="image-index">F / 01</span>
               </Action>
-            </article>
-            <article className="technical-feature">
-              <div className="tech-visual">
-                <span className="orbit orbit-a" />
-                <span className="orbit orbit-b" />
-                <span className="core">01</span>
+              <div className="feature-copy">
+                <Type className="meta">
+                  {featuredProject.category} / {featuredProject.year}
+                </Type>
+                <Type as="h3">{featuredProject.title}</Type>
+                <Type>{featuredProject.subtitle || featuredProject.desc}</Type>
+                <Action
+                  onClick={() => navigate("project", featuredProject.slug)}
+                  className="circle-link"
+                  ariaLabel={`Open ${featuredProject.title} case study`}
+                >
+                  <Arrow />
+                </Action>
               </div>
-              <Type className="meta">ROBOTICS / PROTOTYPE</Type>
-              <Type as="h3">Tactile navigation for a small autonomous rover</Type>
-              <div className="tech-stats">
-                <span>12 sensors</span>
-                <span>38 trials</span>
-                <span>v0.4</span>
-              </div>
             </article>
-          </div>
-        </section>
+
+            <div className="feature-grid">
+              {featuredPhoto && (
+                <article
+                  className="photo-feature"
+                  onClick={() => navigate("photo", featuredPhoto.id)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src={featuredPhoto.imageUrl} alt={featuredPhoto.title} />
+                  <div>
+                    <Type className="meta">PHOTOGRAPHY / {featuredPhoto.year}</Type>
+                    <Type as="h3">{featuredPhoto.title}</Type>
+                    <Type className="muted">{featuredPhoto.notes || "A study of motion and memory."}</Type>
+                  </div>
+                </article>
+              )}
+
+              {articles[0] && (
+                <article
+                  className="text-feature"
+                  onClick={() => navigate("article", articles[0].slug)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <span className="large-number">02</span>
+                  <Type className="meta">{articles[0].category.toUpperCase()} / {articles[0].readTime}</Type>
+                  <Type as="h3">{articles[0].title}</Type>
+                  <Type className="serif-excerpt">
+                    “{articles[0].excerpt}”
+                  </Type>
+                  <Action onClick={() => navigate("article", articles[0].slug)} className="text-link">
+                    Read the piece <Arrow />
+                  </Action>
+                </article>
+              )}
+
+              {projects[1] && (
+                <article
+                  className="technical-feature"
+                  onClick={() => navigate("project", projects[1].slug)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="tech-visual">
+                    <span className="orbit orbit-a" />
+                    <span className="orbit orbit-b" />
+                    <span className="core">01</span>
+                  </div>
+                  <Type className="meta">{projects[1].category.toUpperCase()} / {projects[1].status.toUpperCase()}</Type>
+                  <Type as="h3">{projects[1].title}</Type>
+                  <div className="tech-stats">
+                    {projects[1].outcomes?.map((o, idx) => (
+                      <span key={idx}>{o.value} {o.label}</span>
+                    ))}
+                  </div>
+                </article>
+              )}
+            </div>
+          </section>
+        )}
 
         <section className="themes shell">
           <SectionLabel index="02">Four ways of working</SectionLabel>
           <div className="theme-list">
             {[
-              ["Observation", "Photography as a way of staying with what is usually missed.", "Images / Light / Time"],
-              ["Imagination", "Fiction as a laboratory for other worlds and interior lives.", "Stories / Novel / Essays"],
-              ["Construction", "Interfaces, systems, and machines built to test an idea.", "UI·UX / Code / Robotics"],
-              ["Ideas", "Notes from the edge of what I understand.", "AI·ML / Research / Process"],
+              {
+                title: "Photography",
+                desc: "Capturing light, movement, and public architecture.",
+                tags: "Images / Light / Atmosphere",
+                action: () => navigate("photography"),
+              },
+              {
+                title: "Engineering",
+                desc: "Interfaces, machine perception models, and rovers.",
+                tags: "Code / AI·ML / Robotics",
+                action: () => navigate("work"),
+              },
+              {
+                title: "Writing",
+                desc: "Fieldnotes, essays, and stories on attention and technology.",
+                tags: "Essays / Notes / Fiction",
+                action: () => navigate("writing"),
+              },
+              {
+                title: "Handbook",
+                desc: "First-principles documentation on engineering and systems.",
+                tags: "Living Docs / External",
+                action: () => window.open(config.handbookUrl, "_blank"),
+              },
             ].map((theme, i) => (
-              <div className="theme-row" key={theme[0]}>
+              <div
+                className="theme-row"
+                key={theme.title}
+                onClick={theme.action}
+                style={{ cursor: "pointer" }}
+              >
                 <span>0{i + 1}</span>
-                <Type as="h3">{theme[0]}</Type>
-                <Type>{theme[1]}</Type>
-                <span>{theme[2]}</span>
+                <Type as="h3">{theme.title}</Type>
+                <Type>{theme.desc}</Type>
+                <span>{theme.tags} <Arrow /></span>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="library-preview shell">
-          <div className="section-head">
-            <SectionLabel index="03">From the library</SectionLabel>
-            <Action onClick={() => navigate("library")} className="text-link">
-              Enter the library <Arrow />
-            </Action>
-          </div>
-          <div className="library-layout">
-            <div className="book-cover">
-              <span>FIELD MANUAL / 01</span>
-              <div className="robot-glyph">
-                <span />
-                <span />
-                <span />
-              </div>
-              <Type as="h3">Robotics, from first principles</Type>
-              <span>Living edition · 2025</span>
-            </div>
-            <div className="library-list">
-              {[
-                ["01", "Handbook", "Robotics, from first principles", "Living document"],
-                ["02", "Collection", "The City Between Frames", "47 photographs"],
-                ["03", "Fiction", "The Cartographer of Small Silences", "Short story"],
-                ["04", "Novel", "A Field Guide to Vanishing", "In progress"],
-              ].map((item) => (
-                <Action
-                  key={item[0]}
-                  onClick={() =>
-                    item[1] === "Handbook"
-                      ? navigate("handbook")
-                      : item[1] === "Fiction"
-                      ? navigate("fiction")
-                      : navigate("library")
-                  }
-                  className="library-row"
-                >
-                  <span>{item[0]}</span>
-                  <span>{item[1]}</span>
-                  <strong>{item[2]}</strong>
-                  <span>{item[3]}</span>
-                  <Arrow />
-                </Action>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="notes-preview shell">
           <div className="section-head">
-            <SectionLabel index="04">Latest fieldnotes</SectionLabel>
-            <Action onClick={() => navigate("fieldnotes")} className="text-link">
-              All notes <Arrow />
+            <SectionLabel index="03">Latest writing & fieldnotes</SectionLabel>
+            <Action onClick={() => navigate("writing")} className="text-link">
+              All writing <Arrow />
             </Action>
           </div>
           <div className="notes-grid">
-            {[
-              ["APR 18", "On making interfaces that reward attention", "Essay", "Published"],
-              ["APR 02", "Rover log: the floor is not a plane", "Experiment 07", "Active"],
-              ["MAR 21", "Can a model learn visual restraint?", "Research note", "Open"],
-            ].map((note) => (
-              <article key={note[1]} className="note">
+            {recentArticles.map((note) => (
+              <article
+                key={note.slug}
+                className="note"
+                onClick={() => navigate("article", note.slug)}
+                style={{ cursor: "pointer" }}
+              >
                 <div>
-                  <span>{note[0]}</span>
-                  <span>{note[3]}</span>
+                  <span>{note.date}</span>
+                  <span>{note.status}</span>
                 </div>
-                <Type as="h3">{note[1]}</Type>
-                <span className="meta">{note[2]}</span>
+                <Type as="h3">{note.title}</Type>
+                <span className="meta">{note.category} · {note.readTime}</span>
               </article>
             ))}
           </div>

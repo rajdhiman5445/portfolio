@@ -1,5 +1,6 @@
 import React from "react";
 import type { Page } from "@/types";
+import { getSiteConfig } from "@/utils/content";
 import Type from "./ui/Type";
 import Action from "./ui/Action";
 import Arrow from "./ui/Arrow";
@@ -9,6 +10,8 @@ interface FooterProps {
 }
 
 export default function Footer({ navigate }: FooterProps) {
+  const config = getSiteConfig();
+
   return (
     <footer className="footer">
       <div>
@@ -18,18 +21,40 @@ export default function Footer({ navigate }: FooterProps) {
         </Type>
       </div>
       <div className="footer-links">
-        <Action onClick={() => navigate("about")}>
-          Email <Arrow />
-        </Action>
-        <Action>
-          Instagram <Arrow />
-        </Action>
-        <Action>
-          GitHub <Arrow />
-        </Action>
+        {config.socials.email && (
+          <a
+            href={`mailto:${config.socials.email}`}
+            className="text-link"
+            style={{ textDecoration: "none", color: "inherit", borderBottom: "1px solid var(--line)", padding: ".8rem 0" }}
+          >
+            Email <Arrow />
+          </a>
+        )}
+        {config.socials.instagram && (
+          <a
+            href={config.socials.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link"
+            style={{ textDecoration: "none", color: "inherit", borderBottom: "1px solid var(--line)", padding: ".8rem 0" }}
+          >
+            Instagram <Arrow />
+          </a>
+        )}
+        {config.socials.github && (
+          <a
+            href={config.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link"
+            style={{ textDecoration: "none", color: "inherit", borderBottom: "1px solid var(--line)", padding: ".8rem 0" }}
+          >
+            GitHub <Arrow />
+          </a>
+        )}
       </div>
       <div className="footer-bottom">
-        <span>© 2025 [NAME]</span>
+        <span>© {config.year} {config.name}</span>
         <span>Built with intention, curiosity, and too much coffee.</span>
         <Action onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           Back to top ↑

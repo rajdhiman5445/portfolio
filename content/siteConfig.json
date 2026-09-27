@@ -1,0 +1,29 @@
+{
+  "name": "Raj Dhiman",
+  "mark": "R",
+  "year": "2025",
+  "role": "Multidisciplinary creator",
+  "coordinates": "43.6532° N\n79.3832° W",
+  "heroTitle": "I observe the world,\nthen build new ones.",
+  "heroSubtitle": "Working across images, stories, interfaces, intelligent systems, and machines.",
+  "premiseTitle": "A practice shaped by curiosity—moving between the poetic and the precise.",
+  "premiseCopy": "I photograph what disappears, write what can’t be photographed, and engineer systems that make speculation tangible.",
+  "handbookUrl": "https://github.com/rajdhiman5445",
+  "socials": {
+    "email": "rajdhiman469@gmail.com",
+    "github": "https://github.com/rajdhiman5445",
+    "instagram": "https://instagram.com"
+  },
+  "bio": [
+    "My work moves between photography, fiction, design, computer science, AI/ML, and robotics.",
+    "I study computer science, but I think of code as one material among many. A camera, a sentence, an interface, and a machine each reveal different truths about attention.",
+    "My photographs have accumulated over 3 million views. Beside technical engineering, I write fiction and research notes exploring how machines perceive and interact with our world.",
+    "I am less interested in being “multidisciplinary” as an identity than in following a question until it asks for a different tool."
+  ],
+  "currentPursuits": [
+    { "label": "Reading", "value": "Embodied intelligence, visual culture, strange fiction" },
+    { "label": "Making", "value": "A small rover; a novel; an archive of night photographs" },
+    { "label": "Learning", "value": "Control systems, model interpretability, how to revise" },
+    { "label": "Available for", "value": "Thoughtful collaborations and interesting conversations" }
+  ]
+}
