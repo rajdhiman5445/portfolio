@@ -45,10 +45,10 @@ button { color: inherit; }
 .gradient-orb { position: absolute; border-radius: 50%; filter: blur(100px); -webkit-filter: blur(100px); opacity: .82; will-change: transform; pointer-events: none; }
 .orb-amber { top: 8%; right: 6%; width: min(60vw, 44rem); height: min(60vw, 44rem); background: radial-gradient(circle, rgba(235,85,15,0.95) 0%, rgba(195,55,10,0.7) 42%, rgba(150,30,5,0) 72%); animation: floatAmber 21s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
 .orb-cyan { top: 16%; left: 4%; width: min(54vw, 38rem); height: min(54vw, 38rem); background: radial-gradient(circle, rgba(0,140,215,0.9) 0%, rgba(10,85,195,0.7) 45%, rgba(5,35,120,0) 75%); animation: floatCyan 27s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
-.orb-magenta { top: 38%; right: 22%; width: min(52vw, 36rem); height: min(52vw, 36rem); background: radial-gradient(circle, rgba(215,15,110,0.88) 0%, rgba(155,10,90,0.65) 42%, rgba(90,5,55,0) 75%); animation: floatMagenta 24s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
-.orb-violet { bottom: 8%; left: 24%; width: min(56vw, 40rem); height: min(56vw, 40rem); background: radial-gradient(circle, rgba(120,30,220,0.85) 0%, rgba(65,15,165,0.6) 48%, rgba(20,5,85,0) 78%); animation: floatViolet 33s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
+.orb-magenta { top: 38%; right: 22%; width: min(52vw, 36rem); height: min(52vw, 36rem); background: radial-gradient(circle, rgba(125,16,32,0.92) 0%, rgba(85,10,22,0.72) 42%, rgba(42,4,10,0) 75%); animation: floatMagenta 24s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
+.orb-violet { bottom: 8%; left: 24%; width: min(56vw, 40rem); height: min(56vw, 40rem); background: radial-gradient(circle, rgba(50,25,150,0.85) 0%, rgba(28,12,100,0.6) 48%, rgba(10,4,55,0) 78%); animation: floatViolet 33s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
 .orb-emerald { top: 48%; left: 12%; width: min(42vw, 30rem); height: min(42vw, 30rem); background: radial-gradient(circle, rgba(8,165,110,0.8) 0%, rgba(4,115,75,0.52) 44%, rgba(2,55,35,0) 72%); animation: floatEmerald 35s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
-.orb-plasma { top: 26%; left: 36%; width: min(44vw, 32rem); height: min(44vw, 32rem); background: radial-gradient(circle, rgba(230,45,65,0.8) 0%, rgba(165,25,120,0.55) 42%, rgba(85,15,140,0) 72%); animation: floatPlasma 19s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
+.orb-plasma { top: 26%; left: 36%; width: min(44vw, 32rem); height: min(44vw, 32rem); background: radial-gradient(circle, rgba(150,20,30,0.88) 0%, rgba(100,12,20,0.65) 44%, rgba(45,4,10,0) 75%); animation: floatPlasma 19s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate; }
 @keyframes floatAmber { 0% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); } 33% { transform: translate3d(-14%, 10%, 0) scale(1.18) rotate(16deg); } 66% { transform: translate3d(8%, -10%, 0) scale(0.9) rotate(-12deg); } 100% { transform: translate3d(-6%, 6%, 0) scale(1.08) rotate(6deg); } }
 @keyframes floatCyan { 0% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); } 38% { transform: translate3d(16%, -10%, 0) scale(1.22) rotate(-22deg); } 72% { transform: translate3d(-8%, 14%, 0) scale(0.85) rotate(16deg); } 100% { transform: translate3d(6%, -5%, 0) scale(1.1) rotate(-8deg); } }
 @keyframes floatMagenta { 0% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); } 45% { transform: translate3d(-12%, -15%, 0) scale(1.16) rotate(20deg); } 80% { transform: translate3d(10%, 8%, 0) scale(0.92) rotate(-15deg); } 100% { transform: translate3d(-4%, -6%, 0) scale(1.06) rotate(8deg); } }
@@ -277,7 +277,7 @@ button { color: inherit; }
   .hero-intro { align-items: flex-end; }
   .hero-intro p { width: 78%; }
   .coordinate, .scroll-cue { display: none; }
-  .hero-gradient { background: radial-gradient(circle at 60% 25%, #1e1328 0%, #100d1a 45%, #080807 100%); }
+  .hero-gradient { background: radial-gradient(circle at 60% 25%, #220912 0%, #12060b 45%, #080807 100%); }
   .gradient-orb { filter: blur(55px); -webkit-filter: blur(55px); opacity: .88; }
   .orb-amber { top: -8%; right: -20%; width: 105vw; height: 105vw; }
   .orb-cyan { top: 12%; left: -25%; width: 100vw; height: 100vw; }
