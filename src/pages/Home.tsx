@@ -26,10 +26,13 @@ export default function Home({ navigate }: HomeProps) {
       <main>
         <section className="hero">
           <div className="hero-media">
-            <div className="forest-gradient" aria-hidden="true">
-              <div className="forest-light-primary" />
-              <div className="forest-light-secondary" />
-              <div className="forest-ambient-depth" />
+            <div className="hero-gradient" aria-hidden="true">
+              <div className="gradient-orb orb-amber" />
+              <div className="gradient-orb orb-cyan" />
+              <div className="gradient-orb orb-magenta" />
+              <div className="gradient-orb orb-violet" />
+              <div className="gradient-orb orb-emerald" />
+              <div className="gradient-orb orb-plasma" />
             </div>
             <div className="hero-shade" />
           </div>
@@ -40,15 +43,15 @@ export default function Home({ navigate }: HomeProps) {
               <br />
               then <i>build</i> new ones.
             </Type>
-            <Type className="hero-subtitle-serif">
-              {config.heroSubtitle}
-            </Type>
-          </div>
-          <div className="hero-footer-bar">
-            <span className="coordinate">{config.coordinates.replace("\n", " · ")}</span>
-            <div className="scroll-cue">
-              SCROLL TO ENTER <span>↓</span>
+            <div className="hero-intro">
+              <Type>{config.heroSubtitle}</Type>
+              <span className="coordinate" style={{ whiteSpace: "pre-line" }}>
+                {config.coordinates}
+              </span>
             </div>
+          </div>
+          <div className="scroll-cue">
+            SCROLL TO ENTER <span>↓</span>
           </div>
         </section>
 
