@@ -1,92 +1,377 @@
 [
   {
-    "id": "city-between-frames",
-    "title": "The City Between Frames",
-    "series": "Motion & Time",
-    "year": "2024",
-    "location": "Downtown Transit Corridor",
-    "camera": "Sony A7 IV · 35mm f/1.8",
-    "imageUrl": "https://images.unsplash.com/photo-1534312527009-56c7016453e6?auto=format&fit=crop&w=1600&q=86",
-    "aspectRatio": "16/9",
-    "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1534312527009-56c7016453e6?auto=format&fit=crop&w=2400&q=95"
-    },
-    "notes": "A study of evening light cutting through moving streetcars. Captured at twilight with intentional camera movement to explore how the eye reconstructs fleeting silhouettes."
-  },
-  {
-    "id": "chromatic-solitude",
-    "title": "Chromatic Solitude",
+    "id": "midnight-crosswalk-09b08j",
+    "title": "Midnight Crosswalk",
     "series": "Night Studies",
     "year": "2024",
-    "location": "Industrial District",
-    "camera": "Sony A7 IV · 50mm f/1.4",
-    "imageUrl": "https://images.unsplash.com/photo-1580529352977-df08012d92b0?auto=format&fit=crop&w=1800&q=88",
-    "aspectRatio": "16/9",
-    "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1580529352977-df08012d92b0?auto=format&fit=crop&w=2400&q=95"
-    },
-    "notes": "Abstract color bands cast by sodium-vapor streetlights against rain-slicked asphalt. The compression of distance turns street furniture into pure geometry."
-  },
-  {
-    "id": "morning-frequencies",
-    "title": "Morning Frequencies",
-    "series": "Urban Geometry",
-    "year": "2024",
-    "location": "Financial Center",
-    "camera": "Sony A7 IV · 85mm f/1.8",
-    "imageUrl": "https://images.unsplash.com/photo-1723739012018-f401c2f0e758?auto=format&fit=crop&w=1600&q=86",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-09b08JARM_M.jpg",
     "aspectRatio": "4/3",
     "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1723739012018-f401c2f0e758?auto=format&fit=crop&w=2400&q=95"
+      "unsplash": "https://unsplash.com/photos/09b08JARM_M",
+      "highRes": "/photos/raj-dhiman-09b08JARM_M.jpg"
     },
-    "notes": "Shadows folding across concrete facades during early morning commute. High contrast monochrome conversion emphasizing structural rhythm."
+    "notes": "Exploring pedestrian motion through ambient sodium light and long shadows along downtown streets."
   },
   {
-    "id": "ambient-dusk",
-    "title": "Ambient Dusk",
+    "id": "city-street-winter-glow-0ww-fj",
+    "title": "City Street in Winter Glow",
     "series": "Night Studies",
-    "year": "2023",
-    "location": "Harbor Terminal",
-    "camera": "Fujifilm X-T4 · 23mm f/2",
-    "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=86",
-    "aspectRatio": "16/9",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-0ww-fJ9E3Wg.jpg",
+    "aspectRatio": "1/1",
     "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2400&q=95"
+      "unsplash": "https://unsplash.com/photos/0ww-fJ9E3Wg",
+      "highRes": "/photos/raj-dhiman-0ww-fJ9E3Wg.jpg"
     },
-    "notes": "Long exposure capturing container cranes dissolving into mist over water. Looking at how industrial architecture transforms once human presence retreats."
+    "notes": "Festive urban lighting transforming concrete corridors into a field of warm point-source bokeh."
   },
   {
-    "id": "transit-echoes",
-    "title": "Transit Echoes",
-    "series": "Motion & Time",
-    "year": "2023",
-    "location": "Underground Metro Station",
-    "camera": "Sony A7 IV · 24mm f/2.8",
-    "imageUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1600&q=86",
-    "aspectRatio": "16/9",
+    "id": "solitary-night-walk-9ifg0",
+    "title": "Solitary Night Walk",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-9IFG0-NA2qA.jpg",
+    "aspectRatio": "1/1",
     "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=2400&q=95"
+      "unsplash": "https://unsplash.com/photos/9IFG0-NA2qA",
+      "highRes": "/photos/raj-dhiman-9IFG0-NA2qA.jpg"
     },
-    "notes": "Rushing platform lights during peak rush hour. The blur becomes a measure of human haste inside an engineered cavern."
+    "notes": "A solitary figure framed by ambient storefront glow, exploring stillness within moving metropolis."
   },
   {
-    "id": "quiet-periphery",
-    "title": "Quiet Periphery",
+    "id": "midnight-street-promenade-9mhmmn",
+    "title": "Midnight Street Promenade",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-9MHmMNOkDiU.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/9MHmMNOkDiU",
+      "highRes": "/photos/raj-dhiman-9MHmMNOkDiU.jpg"
+    },
+    "notes": "Figures moving through illuminated nighttime crosswalks, tracking how city light sculpts silhouettes."
+  },
+  {
+    "id": "flight-over-skyline-eivboi",
+    "title": "Flight Over Skyline",
+    "series": "Monochrome",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 85mm",
+    "imageUrl": "/photos/raj-dhiman-EIVbOiLBQi8.jpg",
+    "aspectRatio": "16/9",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/EIVbOiLBQi8",
+      "highRes": "/photos/raj-dhiman-EIVbOiLBQi8.jpg"
+    },
+    "notes": "High contrast monochrome framing a solitary bird cutting across rigid architectural geometric lines."
+  },
+  {
+    "id": "figures-at-waterfall-gdhekj",
+    "title": "Figures at the Waterfall",
+    "series": "Atmospheres",
+    "year": "2024",
+    "location": "Ontario, Canada",
+    "camera": "Sony A7 IV \u00b7 24mm",
+    "imageUrl": "/photos/raj-dhiman-GDheKjWF8kE.jpg",
+    "aspectRatio": "21/9",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/GDheKjWF8kE",
+      "highRes": "/photos/raj-dhiman-GDheKjWF8kE.jpg"
+    },
+    "notes": "Cinematic panoramic frame capturing human presence against cascading water and dark rock shelf."
+  },
+  {
+    "id": "towering-glass-and-sky-hw5qfc",
+    "title": "Towering Glass and Sky",
     "series": "Urban Geometry",
     "year": "2024",
-    "location": "Suburban Rail Yard",
-    "camera": "Sony A7 IV · 50mm f/1.4",
-    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=86",
-    "aspectRatio": "16/9",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 24mm",
+    "imageUrl": "/photos/raj-dhiman-HW5qFCEC7LM.jpg",
+    "aspectRatio": "4/3",
     "links": {
-      "unsplash": "https://unsplash.com",
-      "highRes": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2400&q=95"
+      "unsplash": "https://unsplash.com/photos/HW5qFCEC7LM",
+      "highRes": "/photos/raj-dhiman-HW5qFCEC7LM.jpg"
     },
-    "notes": "Where infrastructure meets natural terrain. Exploring negative space and stillness at the edge of the transit network."
+    "notes": "Upward perspective compressing modernist architectural curtain wall against cloud gradients."
+  },
+  {
+    "id": "vintage-propeller-and-facade-iixizx",
+    "title": "Vintage Propeller and Facade",
+    "series": "Urban Geometry",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-IixIZXAAY_0.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/IixIZXAAY_0",
+      "highRes": "/photos/raj-dhiman-IixIZXAAY_0.jpg"
+    },
+    "notes": "Mechanical precision meets architectural volume; an exploration of engineered artifacts."
+  },
+  {
+    "id": "threshold-in-stone-lvyge1",
+    "title": "Threshold in Stone",
+    "series": "Architectural Details",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-LvyGE1i0-OM.jpg",
+    "aspectRatio": "4/5",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/LvyGE1i0-OM",
+      "highRes": "/photos/raj-dhiman-LvyGE1i0-OM.jpg"
+    },
+    "notes": "Weathered timber and glass panes recessed within masonry, capturing texture and aging surfaces."
+  },
+  {
+    "id": "minimalist-eyewear-nbpny",
+    "title": "Minimalist Eyewear",
+    "series": "Still Life",
+    "year": "2024",
+    "location": "Studio",
+    "camera": "Sony A7 IV \u00b7 90mm Macro",
+    "imageUrl": "/photos/raj-dhiman-NbpnY-LkSNo.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/NbpnY-LkSNo",
+      "highRes": "/photos/raj-dhiman-NbpnY-LkSNo.jpg"
+    },
+    "notes": "High-key studio product study emphasizing pure form, translucency, and optical precision."
+  },
+  {
+    "id": "solitude-on-the-hill-rypcft",
+    "title": "Solitude on the Hill",
+    "series": "Landscapes",
+    "year": "2024",
+    "location": "Ontario, Canada",
+    "camera": "Sony A7 IV \u00b7 85mm",
+    "imageUrl": "/photos/raj-dhiman-RypcfTl_RjM.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/RypcfTl_RjM",
+      "highRes": "/photos/raj-dhiman-RypcfTl_RjM.jpg"
+    },
+    "notes": "Isolated dwelling resting on rural ridgeline under wide atmospheric overcast skies."
+  },
+  {
+    "id": "coastal-shoreline-dwelling-yis7la",
+    "title": "Coastal Shoreline Dwelling",
+    "series": "Landscapes",
+    "year": "2024",
+    "location": "Ontario, Canada",
+    "camera": "Sony A7 IV \u00b7 28mm",
+    "imageUrl": "/photos/raj-dhiman-YiS7laeCbk4.jpg",
+    "aspectRatio": "21/9",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/YiS7laeCbk4",
+      "highRes": "/photos/raj-dhiman-YiS7laeCbk4.jpg"
+    },
+    "notes": "Panoramic view of waterfront structures quietly anchoring the line between water and sky."
+  },
+  {
+    "id": "chromatic-rings-aq8tdk",
+    "title": "Chromatic Rings",
+    "series": "Abstract",
+    "year": "2024",
+    "location": "Studio",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-aQ8tDKyOsCY.jpg",
+    "aspectRatio": "4/5",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/aQ8tDKyOsCY",
+      "highRes": "/photos/raj-dhiman-aQ8tDKyOsCY.jpg"
+    },
+    "notes": "Interference patterns and spectral color rings generated by optical refraction and polarized light."
+  },
+  {
+    "id": "streetlamp-into-azure-erzrpd",
+    "title": "Streetlamp into Azure",
+    "series": "Minimalism",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 85mm",
+    "imageUrl": "/photos/raj-dhiman-erZRPDVvOns.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/erZRPDVvOns",
+      "highRes": "/photos/raj-dhiman-erZRPDVvOns.jpg"
+    },
+    "notes": "Minimal silhouette of an industrial luminaire slicing through monochrome evening gradient."
+  },
+  {
+    "id": "night-strollers-transit-h7wqed",
+    "title": "Night Strollers in Transit",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-h7WQED4HcNw.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/h7WQED4HcNw",
+      "highRes": "/photos/raj-dhiman-h7WQED4HcNw.jpg"
+    },
+    "notes": "Long exposure tracing nocturnal urban travelers moving through illuminated intersection crosswalks."
+  },
+  {
+    "id": "lantern-against-sky-hqeyde",
+    "title": "Lantern Against Open Sky",
+    "series": "Minimalism",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 85mm",
+    "imageUrl": "/photos/raj-dhiman-hQEYder1vYg.jpg",
+    "aspectRatio": "9/16",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/hQEYder1vYg",
+      "highRes": "/photos/raj-dhiman-hQEYder1vYg.jpg"
+    },
+    "notes": "Vertical crop exploring negative space and the graphic clarity of functional street fixtures."
+  },
+  {
+    "id": "ornate-facade-dusk-khdw40",
+    "title": "Ornate Facade at Dusk",
+    "series": "Urban Geometry",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 24mm",
+    "imageUrl": "/photos/raj-dhiman-kHDW40rN4bA.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/kHDW40rN4bA",
+      "highRes": "/photos/raj-dhiman-kHDW40rN4bA.jpg"
+    },
+    "notes": "Historical carved stonework bathed in the fading ambient deep-blue hour of twilight."
+  },
+  {
+    "id": "evening-sidewalk-rhythm-kuhfla",
+    "title": "Evening Sidewalk Rhythm",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-kUHflAjwPRY.jpg",
+    "aspectRatio": "1/1",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/kUHflAjwPRY",
+      "highRes": "/photos/raj-dhiman-kUHflAjwPRY.jpg"
+    },
+    "notes": "Urban streetscape framed symmetrically in 1:1, contrasting wet asphalt reflections and incandescent neon."
+  },
+  {
+    "id": "bee-on-foliage-lfagbl",
+    "title": "Bee on Foliage",
+    "series": "Macro Studies",
+    "year": "2024",
+    "location": "Ontario, Canada",
+    "camera": "Sony A7 IV \u00b7 90mm Macro",
+    "imageUrl": "/photos/raj-dhiman-lfagblgjQkA.jpg",
+    "aspectRatio": "1/1",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/lfagblgjQkA",
+      "highRes": "/photos/raj-dhiman-lfagblgjQkA.jpg"
+    },
+    "notes": "Close-up macro study recording fine wing venation, organic pollen textures, and shallow focal depth."
+  },
+  {
+    "id": "suspended-prayer-flags-m0vxka",
+    "title": "Suspended Prayer Flags",
+    "series": "Atmospheres",
+    "year": "2024",
+    "location": "Ontario, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-m0VXKaoiaoY.jpg",
+    "aspectRatio": "4/3",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/m0VXKaoiaoY",
+      "highRes": "/photos/raj-dhiman-m0VXKaoiaoY.jpg"
+    },
+    "notes": "Vibrant chromatic prayer flags strung against sky, carrying movement and wind through color fields."
+  },
+  {
+    "id": "window-on-the-city-nuhrzm",
+    "title": "Window on the City",
+    "series": "Urban Geometry",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-nuhRZM6kq5o.jpg",
+    "aspectRatio": "1/1",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/nuhRZM6kq5o",
+      "highRes": "/photos/raj-dhiman-nuhRZM6kq5o.jpg"
+    },
+    "notes": "Square composition observing distant towers and rooftop skylines through interior window panes."
+  },
+  {
+    "id": "ferris-wheel-silhouette-pk8met",
+    "title": "Ferris Wheel Silhouette",
+    "series": "Monochrome",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-pK8MEt7V_qs.jpg",
+    "aspectRatio": "3/2",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/pK8MEt7V_qs",
+      "highRes": "/photos/raj-dhiman-pK8MEt7V_qs.jpg"
+    },
+    "notes": "Geometric radial spokes and mechanical symmetry rendered in crisp high-contrast black and white."
+  },
+  {
+    "id": "abstract-form-in-square-txsntk",
+    "title": "Abstract Form in Square",
+    "series": "Minimalism",
+    "year": "2024",
+    "location": "Studio",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-tXsnTKe2pYI.jpg",
+    "aspectRatio": "1/1",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/tXsnTKe2pYI",
+      "highRes": "/photos/raj-dhiman-tXsnTKe2pYI.jpg"
+    },
+    "notes": "A minimal spatial investigation isolating form, shadow gradients, and geometric boundary."
+  },
+  {
+    "id": "sanctuary-stained-glass-yomnwq",
+    "title": "Sanctuary Stained Glass",
+    "series": "Night Studies",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 35mm",
+    "imageUrl": "/photos/raj-dhiman-yoMnWQEk_0M.jpg",
+    "aspectRatio": "4/5",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/yoMnWQEk_0M",
+      "highRes": "/photos/raj-dhiman-yoMnWQEk_0M.jpg"
+    },
+    "notes": "Glow of illuminated stained glass cutting through shadowy church interiors with solemn luminescence."
+  },
+  {
+    "id": "ferris-gondolas-aloft-yympoh",
+    "title": "Ferris Gondolas Aloft",
+    "series": "Atmospheres",
+    "year": "2024",
+    "location": "Toronto, Canada",
+    "camera": "Sony A7 IV \u00b7 50mm",
+    "imageUrl": "/photos/raj-dhiman-yymPohlnF6w.jpg",
+    "aspectRatio": "9/16",
+    "links": {
+      "unsplash": "https://unsplash.com/photos/yymPohlnF6w",
+      "highRes": "/photos/raj-dhiman-yymPohlnF6w.jpg"
+    },
+    "notes": "Vertical perspective tracking gondolas suspended in mid-air against open afternoon cloud banks."
   }
 ]
