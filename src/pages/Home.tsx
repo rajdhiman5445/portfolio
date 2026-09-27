@@ -1,6 +1,5 @@
 import React from "react";
 import type { Page } from "@/types";
-import atmosphere from "@/imports/_.jpeg";
 import { getSiteConfig, getProjects, getArticles, getPhotos } from "@/utils/content";
 import Type from "@/components/ui/Type";
 import Action from "@/components/ui/Action";
@@ -27,7 +26,11 @@ export default function Home({ navigate }: HomeProps) {
       <main>
         <section className="hero">
           <div className="hero-media">
-            <img src={atmosphere} alt="Abstract orange and blue light moving through darkness" />
+            <div className="hero-gradient" aria-hidden="true">
+              <div className="gradient-orb orb-orange" />
+              <div className="gradient-orb orb-blue" />
+              <div className="gradient-orb orb-dusk" />
+            </div>
             <div className="hero-shade" />
           </div>
           <div className="hero-copy">
