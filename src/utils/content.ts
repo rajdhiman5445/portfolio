@@ -1,4 +1,4 @@
-import yaml from "js-yaml";
+import { load as yamlLoad } from "js-yaml";
 import type { SiteConfig, Project, PhotoItem, Article } from "@/types";
 import siteConfigData from "../../content/siteConfig.json";
 import photographyData from "../../content/photography.json";
@@ -22,7 +22,7 @@ function parseMarkdown<T>(raw: string): { data: T; content: string } {
     return { data: {} as T, content: raw };
   }
   try {
-    const data = (yaml.load(match[1]) || {}) as T;
+    const data = (yamlLoad(match[1]) || {}) as T;
     return { data, content: match[2].trim() };
   } catch (e) {
     console.error("Error parsing frontmatter:", e);
